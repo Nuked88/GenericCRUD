@@ -62,7 +62,7 @@ function getTableData($conn, $table) {
     $user_id = $_SESSION['user_id'];
     
     // Query database to get username of logged in user
-    $query = "SELECT username FROM users WHERE id = $user_id";
+    $query = "SELECT username FROM genericcrud_users WHERE id = $user_id";
     $result = mysqli_query($conn, $query);
     if (!$result) {
     return null;

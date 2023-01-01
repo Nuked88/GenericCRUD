@@ -13,7 +13,7 @@ if (isset($_POST['username'])) {
     // Check if username and password are not empty
     if (!empty($username) && !empty($password)) {
         // Query database for user with matching username and password
-        $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+        $query = "SELECT * FROM genericcrud_users WHERE username='$username' AND password='$password'";
         $result = mysqli_query($conn, $query);
         echo $query;
         // Check if query returned a result
