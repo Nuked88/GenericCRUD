@@ -19,7 +19,7 @@ CREATE TABLE `genericcrud_users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 ```
-And then add an user and a password (not encripted)
+And then add an user and a password (not encrypted)
 
 I think that i will remove this in the future and i will place the users in an external database like sqlite or textual db
 
