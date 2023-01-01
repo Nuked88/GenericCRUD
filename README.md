@@ -8,7 +8,7 @@ Still! I find it really convenient for simpel thing. It's like a micro phpmyadmi
 ## How to use it
 Just edit the config.inc.php according to your db data
 
-In the same you need to create a simple table called genericcrud_users with this schema:
+In the same db you need to create a simple table called genericcrud_users with this schema:
 
 ```sql
 CREATE TABLE `genericcrud_users` (
@@ -19,4 +19,9 @@ CREATE TABLE `genericcrud_users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 ```
+And then add an user and a password (not encripted)
 
+I think that i will remove this in the future and i will place the users in an external database like sqlite or textual db
+
+## More info
+I've explained how this has been created [here]()
